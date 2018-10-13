@@ -1,0 +1,175 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+div {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.header{
+	width: 100%;
+	height: 1.25rem;
+	background-color: #1e52fc;
+}
+.header h1 {
+	font-size: 0.36rem;
+	color: white;
+	text-align: center;
+	line-height: 1.25rem;
+}
+/*订单列表*/
+.list {
+	width: 100%;
+	height: 11.2rem;
+	background-color: #f4f4f4;
+	padding-top: 0.23rem;
+}
+
+.shop{
+	width: 7.02rem;
+	height: 2.2rem;
+	background-color: yellow;
+	background-color: white;
+	border-radius: 0.15rem;
+	box-shadow: 0px 2px 13px 0px 
+		#a2a5a3;
+	margin-bottom: 0.17rem;
+	padding-top: 0.215rem;
+	
+}
+.shop-left {
+	width: 1.77rem;
+	height: 1.77rem;
+	background-color: orange;
+	margin: 0 0.23rem 0 0.23rem;
+	float: left;
+}
+.shop-left> a>img {
+	width: 1.77rem;
+	height: 1.77rem;
+	float: left;
+}
+.shop-right {
+	width: calc(100% - 2.23rem);
+	height: 1.77rem;
+	float: right;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.name {
+	margin-left: 0;
+	width: 4.79rem;
+}
+.name-left {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.24rem;
+	color: #2e2d2d;
+	opacity: 0.8;
+	float: left;
+}
+.name-right {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.18rem;
+	color: #000000;
+	opacity: 0.4;
+	float: right;
+	padding-right: 0.23rem;
+}
+.star {
+	margin-left: 0;
+}
+.star>.icon-five-star {
+	font-size: 0.2rem;
+	color: yellow;
+	float: left;
+}
+.date {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.24rem;
+	color: #2e2d2d;
+	opacity: 0.8;
+	float: left;
+	margin-left: 0;
+	width: 4.79rem;
+}
+.date-left {
+	float: left;
+}
+.date-left>.icon-riqi {
+	color: #fc376f;
+}
+.date-right {
+	float: right;
+	padding-right: 0.23rem;
+	color: red;
+	font-size: 0.3rem;
+}
+.button{
+	margin-left: 0;
+}
+.return {
+	width: 0.96rem;
+	height: 0.34rem;
+	background-image: linear-gradient(0deg,#34f3fa 0%,#3095fd 100%);
+	float: left;
+	margin-right: 0.26rem;
+	font-size: 0.2rem;
+	color: white;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: 0.34rem;
+}
+.look {
+	width: 0.96rem;
+	height: 0.34rem;
+	background-image: linear-gradient(0deg,#fcad31 0%,#f7d32d 100%);
+	float: left;
+	font-size: 0.2rem;
+	color: white;
+	border-radius: 0.5rem;
+	text-align: center;
+	line-height: 0.34rem;
+}
+/*底部*/
+.footer {
+	height: 0.87rem;
+	width: 7.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.include {
+	width: 0.55rem;
+	height: 0.6rem;
+}
+.footer>a>.shouye {
+	width: 0.55rem;
+	height: 0.6rem;
+}
+.include i{
+	font-size: 0.35rem;
+	color: #7f7f7f;
+	display: block;
+	padding-left: 0.1rem;
+}
+.footer .dingdan i{
+	font-size: 0.35rem;
+	color: #f92b98;
+	display: block;
+	padding-left: 0.1rem;
+}
+.include p{
+	font-size: 0.14rem;
+	color: black;
+	opacity: 0.5;
+}
+.dingdan p{
+	font-size: 0.14rem;
+	color: #f92b98;
+}

@@ -1,0 +1,114 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+div {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/*广告栏*/
+.banner {
+	width: 100%;
+	height: 7.97rem;
+	background-image: url(../img/foodinfobanner.png);
+	background-repeat: no-repeat;
+	padding: 6.48rem 0.24rem 0 0.24rem;
+}
+.banner p {
+	color: white;
+	font-family: PingFang-SC-Medium;
+	font-size: 0.3rem;
+}
+/*美食信息*/
+.info {
+	width: 7.02rem;
+	height: 2.26rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	margin-top: 0.57rem;
+}
+.name {
+	width: 100%;
+	height: 0.5rem;
+}
+.name-left {
+	height: 0.5rem;
+	width: 1rem;
+	background-color: orange;
+	float: left;
+	font-size: 0.3rem;
+	color: white;
+	text-align: center;
+	line-height: 0.5rem;
+}
+.name-right{
+	font-size: 0.3rem;
+	float: left;
+	line-height: 0.5rem;
+	padding-left: 0.2rem;
+	font-weight: bold;
+}
+.good{
+	font-size: 0.24rem;
+	margin: 0;
+}
+.youhui {
+	width: 100%;
+	height: 0.5rem;
+}
+.youhui-left{
+	height:0.45rem;
+	width: 0.86rem;
+	float: left;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.45rem;
+	border: 0.01rem solid red;
+	color: red;
+}
+.youhui-right{
+	float: left;
+	font-size: 0.22rem;
+	text-align: center;
+	line-height: 0.45rem;
+	color: red;
+	padding-left: 0.24rem;
+}
+.spend {
+	width: 100%;
+	height: 0.5rem;
+}
+.spend-left {
+	width: 1rem;
+	height: 0.5rem;
+	float: left;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.danwei {
+	font-size: 0.18rem;
+	color: red;
+	line-height: 0.5rem;
+}
+.money{
+	font-size: 0.24rem;
+	color: red;
+}
+.spend-right {
+	width: 0.5rem;
+	height: 0.5rem;
+	float: right;
+}
+.icon-jiahao-copy{
+	float: right;
+	text-align: center;
+	line-height: 0.5rem;
+	color: #33b3ed;
+}

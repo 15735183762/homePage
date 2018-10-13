@@ -1,0 +1,365 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+div {
+	margin: 0 auto;
+}
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/*头部*/
+.header {
+	width: 7.5rem;
+	height: 0.4rem;
+	background-color: #063ffc;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 9990;
+}
+/*广告栏*/
+.banner {
+	width: 7.5rem;
+	height: 1.82rem;
+	background-image: url(../img/banner.png);
+	background-size: 7.5rem 1.23rem;
+	background-repeat: no-repeat;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	position: relative;
+	position: fixed;
+	top: 0.4rem;
+	left: 0;
+	z-index: 9999;
+}
+.banner i{
+	position: absolute;
+	left: 0;
+	top: 0.5rem;
+	color: #3c7afa;
+}
+.banner del{
+	position: absolute;
+	right: 0.5rem;
+	top: 0.5rem;
+	color: #3c7afa;
+}
+.container {
+	width: 1.25rem;
+	height: 1.25rem;
+	background-color: orange;
+	border-radius: 0.05rem;
+}
+.container img {
+	width: 1.25rem;
+	height: 1.25rem;
+}
+/*店铺名称介绍*/
+.main {
+	width: 7.02rem;
+	height: 2.43rem;
+	/*margin-top: 2.22rem;*/
+	position: fixed;
+	left: 0;
+	top: 2.22rem;
+	z-index: 9999;
+	background-color: white;
+}
+.main h3 {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.4rem;
+	color: #050505;
+	opacity: 0.8;
+	text-align: center;
+	padding-top: 0.1rem;
+	padding-bottom: 0.17rem;
+}
+.main >p{
+	font-family: PingFang-SC-Medium;
+	font-size: 0.22rem;
+	color: #8d8d8d;
+	opacity: 0.8;
+	text-align: center;
+	padding-bottom: 0.2rem;
+}
+.shopjs {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	color: #010101;
+	opacity: 0.6;
+	text-align: center;
+}
+.youhui {
+	width: 5.44rem;
+	height: 0.33rem;
+	border: solid 2px #e5e5e5;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.youhui-left {
+	width: 0.5rem;
+	height: 0.33rem;
+	background-color: #ff0000;
+	opacity: 0.6;
+}
+.youhui-left >p {
+	font-size: 0.17rem;
+	color: white;
+	text-align: center;
+}
+.youhui-right {
+	width: 1.12rem;
+	height: 0.33rem;
+	display: flex;
+	align-items: center;
+}
+.youhui-right >p {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.17rem;
+	color: #030303;
+	opacity: 0.6;
+	line-height: 0.33rem;
+}
+.youhui-right i {
+	font-size: 0.17rem;
+	float: right;
+}
+.youhui-middle {
+	width: 3.8rem;
+	height: 0.33rem;
+}
+.youhui-middle p {
+	font-family: PingFang-SC-Medium;
+	font-size: 0.22rem;
+	color: #8d8d8d;
+	opacity: 0.8;
+	text-align: center;
+}
+/*店铺*/
+.shop{
+	height: 0.96rem;
+	width: 7.02rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 4.65rem;
+}
+.shop a {
+	color: #010101;
+	font-size: 0.24rem;	
+}
+.shop >a >li.hot{
+	font-weight: bold;
+}
+.shop-tiao {
+	width: 0.44rem;
+	height: 0.04rem;
+	background-color: #1e52fc;
+	position: absolute;
+	bottom: 7.73rem;
+	left: 1.2rem;
+	border-radius: 0.3rem;
+}
+/*店铺详情*/
+.introduce {
+	width: 7.5rem;
+	height: 10.19rem;
+	background-color: #e5e5e5;
+	padding-top:0.05rem;
+}
+.introduce-container{
+	width: 7.5remrem;
+	height: 8.86rem;
+	background-color: white;
+	padding: 0 0.24rem;
+}
+.introduce-container-left {
+	width: 1.58rem;
+	height: 8.86rem;
+	background-color: pink;
+	float: left;
+}
+.introduce-container-left>a>p {
+	width: 1.58rem;
+	height: 0.886rem;
+	background-color: #f4f4f4;
+	font-size: 0.24rem;
+	text-align: center;
+	line-height: 0.886rem;
+	color: #030303;
+}
+.introduce-container-left>a>p.hot{
+	background-color: white;
+}
+.icon-rexiao {
+	color: white;
+	background-color: orange;
+	margin-right: 0.1rem;
+}
+.icon-youhui1{
+	color: white;
+	background-color: #cccccc;
+	margin-right: 0.1rem;
+}
+.introduce-container-right {
+	width: 5.44rem;
+	height: 8.86rem;
+    float: left;
+}
+.right-inner {
+	width: 5.24rem;
+	height: 1.532rem;
+	padding-top: 0.24rem;
+	padding-left: 0.24rem;
+	display: flex;
+	justify-content: space-between;
+}
+.shopimg {
+	width: 1.43rem;
+	height: 1.43rem;
+	background-color: orange;
+}
+.shopimg img{
+	width: 1.43rem;
+	height: 1.43rem;
+}
+.shopname {
+	width: 4rem;
+	height: 1.43rem;
+	background-color: white;
+	margin-left: 0.24rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.shopname .size1 {
+	font-size: 0.24rem;
+	color: #030303;
+}
+.shopname .size2 {
+	font-size: 0.22rem;
+	color: #8e8e8e;
+	padding-top: 0.1rem;
+}
+.shopname .size3 {
+	font-size: 0.24rem;
+	color: #fe3f3f;
+	padding-top: 0.1rem;
+}
+.shopname .size4 {
+	font-size: 0.18rem;
+	color: #fe3f3f;
+	padding-top: 0.1rem;
+}
+.box {
+	width: 3rem;
+	height: 0.4rem;
+	margin: 0;
+}
+.box-left {
+	width: 1rem;
+	height: 100%;
+	float: left;
+	display: flex;
+}
+.box-right {
+	width: 0.8rem;
+	height: 100%;
+	float: right;
+	display: flex;
+	align-items: flex-end;
+	font-size: 0;
+}
+.box-right i{
+	color: #46aff1;;
+}
+.box-right >span {
+	font-size: 0.24rem;
+	padding: 0 0.1rem;
+}
+/*底部*/
+.footer {
+	width: 7.5rem;
+	height: 1.33rem;
+	background-color: pink;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.footer-up {
+	width: 7.5rem;
+	height: 0.35rem;
+	background-color: #fbe74c;
+}
+.footer-up p{
+	font-size: 0.22rem;
+	text-align: center;
+	font-family: PingFang-SC-Medium;
+	color: #010101;
+	opacity: 0.8;
+}
+.footer-down {
+	width: 7.5rem;
+	height: 0.98rem;
+	background-color: black;
+	opacity: 0.8;
+	position: relative;
+}
+.footer-down-right {
+	width: 1.53rem;
+	height: 0.98rem;
+	background-color: #434343;
+	float: right;
+}
+.footer-down-right>p{
+	font-family: PingFang-SC-Medium;
+	font-size: 0.24rem;
+	line-height: 0.98rem;
+	color: #fffffe;
+	opacity: 0.8;
+	text-align: center;
+}
+.gouwu {
+	width: 0.75rem;
+	height: 0.75rem;
+	border: 2px solid #494949;
+	border-radius: 50%;
+	background-color: black;
+	position: absolute;
+	bottom: 0.44rem;
+	left: 0.24rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.gouwu .icon-gouwuche1{
+	font-size: 0.5rem;
+	color: white;
+	opacity: 0.6;
+}
+.footer-middle {
+	height: 0.98rem;
+	width: 3.8rem;
+	float: left;
+}
+.footer-down-size {
+	font-size: 0.24rem;
+	color: white;
+	float: left;
+	margin-left: 1.5rem;
+	margin-top: 0.1rem;
+	opacity: 0.6;
+}
+.footer-down-sizeone {
+	font-size: 0.18rem;
+	color: white;
+	float: left;
+	margin-left: 1.5rem;
+	margin-top: 0.1rem;
+	opacity: 0.6;
+}

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+	<title>天气APP</title>
+	<link rel="stylesheet" type="text/css" href="https://at.alicdn.com/t/font_853165_7cfc8h5nmzo.css"/>
+	<link rel="stylesheet" href="css/index.css">
+	<!-- 引入js的路径 -->
+	<script src="js/jquery3.2.1.min.js"></script>
+	<script src="js/rem.js"></script>
+	<script src="js/citys.js"></script>
+</head>
+<body>
+	<main>
+	<!--蓝背景图-->
+	<div class="banner">
+		<p class="cityinfo"><i class="iconfont icon-dizhi"></i><span>太原市阳曲县</span></p>
+		<div class="pollution">
+			<span>空气</span>
+			<span class="con">轻度污染</span>
+		</div>
+		<p class="climate">0°</p>
+		<p class="weather">晴</p>
+		<p>湿度28%</p>
+		<p>天气冷了，注意保暖~</p>
+		<div class="picture">
+			<img src="img/picture.png"/>
+		</div>
+	</div>
+	<!--今明天气状况-->
+	<div class="weacon">
+		<div class="weacon-info">
+			<div class="today">
+				<div class="up">
+					<p>今天</p>
+				    <span class="tem">
+				    	<span class="today-high">2</span>
+				        <span>/</span>
+				        <span class="today-low">-11</span>
+				    </span>				    
+				</div>
+				<div class="down">
+					<p class="today-down">晴转多云</p>
+				    <img src="img/1.png" alt="" />
+				</div>				
+			</div>
+		    <div class="tomorrow">
+		    	<div class="up">
+					<p>明天</p>
+				    <span class="tem">
+				    	<span class="tomorrow-high">2</span>
+				        <span>/</span>
+				        <span class="tomorrow-low">-11</span>
+				    </span>	
+				</div>
+				<div class="down">
+					<p class="tomorrow-down">晴</p>
+				    <img src="img/0.png" alt="" />
+				</div>	
+		    </div>
+		</div>	
+	</div>
+	<!--24小时天气状况-->
+	<div class="timewea">
+		<div class="timewea-info">
+			<ul>
+			<!--<li class="contain">
+				<p>12:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	
+			<li class="contain">
+				<p>13:00</p>
+			    <img src="img/0.png"/>
+			    <p>4°</p>
+			</li>	
+			<li class="contain">
+				<p>14:00</p>
+			    <img src="img/0.png"/>
+			    <p>3°</p>
+			</li>	
+			<li class="contain">
+				<p>15:00</p>
+			    <img src="img/0.png"/>
+			    <p>2°</p>
+			</li>	
+			<li class="contain">
+				<p>16:00</p>
+			    <img src="img/0.png"/>
+			    <p>-1°</p>
+			</li>	
+			<li class="contain">
+				<p>17:00</p>
+			    <img src="img/0.png"/>
+			    <p>-2°</p>
+			</li>
+			<li class="contain">
+				<p>18:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	
+			<li class="contain">
+				<p>19:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	
+			<li class="contain">
+				<p>19:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	
+			<li class="contain">
+				<p>19:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	
+			<li class="contain">
+				<p>19:00</p>
+			    <img src="img/0.png"/>
+			    <p>5°</p>
+			</li>	-->
+			</ul>
+		</div>
+	</div>
+	<!--详细天气情况-->
+	<div class="wea-detail">
+		<div class="wea-detail-info">
+			<ul>
+			<!--<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>
+			<li class="wea-detail-contain">
+				<div class="date">
+					<p class="date-info">昨天</p>
+				    <p>01/15</p>
+				</div>			
+				<img src="img/1.png"/>
+				<p>3°</p>
+				<p>-12°</p>
+				<img src="img/31.png"/>
+				<p>多云</p>
+				<div>
+					<p>西北风</p>
+				    <p class="level">3级</p>
+				</div>	
+			</li>		-->
+			</ul>
+		</div>
+	</div>
+	<!--温馨提示-->
+	<div class="notice">
+		<div class="notice-info">
+			<ul>
+				<li>
+					<img src="img/60.png"/>
+					<p class="one">不带伞</p>
+					<p class="two">雨伞</p>
+				</li>
+				<li>
+					<img src="img/61.png"/>
+					<p class="one">冷</p>
+					<p class="two">穿衣</p>
+				</li>
+				<li>
+					<img src="img/62.png"/>
+					<p class="one">较弱</p>
+					<p class="two">防晒</p>
+				</li>
+				<li>
+					<img src="img/63.png"/>
+					<p class="one">较易发</p>
+					<p class="two">感冒</p>
+				</li>
+				<li>
+					<img src="img/64.png"/>
+					<p class="one">较不宜</p>
+					<p class="two">运动</p>
+				</li>
+				<li>
+					<img src="img/65.png"/>
+					<p class="one">较适宜</p>
+					<p class="two">洗车</p>
+				</li>
+				<li>
+					<img src="img/66.png"/>
+					<p class="one">不宜</p>
+					<p class="two">钓鱼</p>
+				</li>
+				<li>
+					<img src="img/67.png"/>
+					<p class="one">良好</p>
+					<p class="two">交通</p>
+				</li>
+			</ul>
+		</div>
+	    <p class="footer">数据来源于中国天气网</p>
+	</div>
+	</main>
+	<!--跳转到搜索块-->
+	<div class="citys">
+		<div class="search">
+			<i class="iconfont icon-sousuo"></i>
+			<input type="text" name="" id="" placeholder="搜索市、区、县等" />
+			<p>取消</p>
+		</div>
+		<p class="information1">当前定位</p>
+		<div class="area">小店区</div>
+		<p class="information">历史记录</p>
+		<i class="iconfont icon-laji"></i>
+		<div class="history">
+			<div class="city">拉萨</div>
+			<div class="city">上海</div>
+		</div>		
+		<span class="scence">热门景区</span>
+		<section>
+			<div class="city">故宫</div>
+			<div class="city">颐和园</div>
+			<div class="city">九寨沟</div>	
+			<div class="city">凤凰古城</div>
+			<div class="city">秦始皇陵</div>
+			<div class="city">龙门石窟</div>	
+			<div class="city">武陵源</div>
+			<div class="city">华山</div>
+			<div class="city">黄山</div>	
+		</section>
+		<div class="hot-city">
+			<!--<p class="information2">热门城市</p>-->
+			<!--<ul>-->
+			<!--<li class="city">北京</li>
+			<li class="city">上海</li>
+			<li class="city">广州</li>	
+			<li class="city">深圳</li>
+			<li class="city">郑州</li>
+			<li class="city">西安</li>	
+			<li class="city">南京</li>
+			<li class="city">杭州</li>
+			<li class="city">武汉</li>	
+			<li class="city">成都</li>
+			<li class="city">沈阳</li>
+			<li class="city">天津</li>	-->
+			<!--</ul>-->
+		</div>			
+	</div>
+</body>
+</html>
+<!--
+	1.获取默认城市的天气信息
+	2.获取所有城市的信息
+	3.点击每个城市可以获取当前城市的天气信息
+	4.在搜索框内输入要搜索的城市，几点搜素按钮进行搜素
+-->

@@ -1,0 +1,266 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+div {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/*头部*/
+.header {
+	width: 100%;
+	height: 4.3rem;
+	background-color: #f4f4f4;
+}
+.header-inner {
+	width: 100%;
+	height: 3.68rem;
+	background-color: #1e52fc;;
+}
+.header-top {
+	width: 100%;
+	height: 0.97rem;
+	background-color: #1E52FC;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 0.24rem;
+}
+.header-top h1{
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.36rem;
+	color: #ffffff;
+}
+.header-inner >.header-top >.icon-ling{
+	color: white;
+}
+.header-inner >.header-top >.icon-shezhi{
+	color: white;
+}
+.header-middle{
+	width: 7.02rem;
+	height: 1.67rem;
+	border-radius: 0.15rem;
+	background-color: white;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	
+}
+.header-middle-left {
+	width: 1.1rem;
+	height: 1.1rem;
+	background-color: orange;
+	margin: 0 0.24rem;
+	border-radius: 50%;
+	background-image: url(../img/meishi2.jpg);
+	background-size: 1.1rem 1.1rem;
+}
+.header-middle-mid {
+	width: 5.1rem;
+	height: 1.19rem;
+	/*background-color: pink;*/
+	display: flex;flex-direction: column;
+	justify-content: space-between;
+}
+.name {
+	font-size: 0.26rem;
+	color: #f931a7;
+	margin: 0;
+}
+.star {
+	width: 45%;
+	height: 0.24rem;
+	/*background-color: orange;*/
+	margin: 0;
+	display: flex;
+	align-items: center;
+}
+.vip {
+	width: 0.61rem;
+	height: 0.24rem;
+	border-radius: 0.5rem;
+	float: right;
+	font-size: 0.22rem;
+	color: white;
+	text-align: center;
+	line-height: 0.24rem;
+	background-color: #f9dd3d;
+	box-shadow: 0px 3px 13px 0px 
+		rgba(252, 254, 78, 0.71);
+	margin-left: 0.2rem;
+}
+.phone {
+	font-size: 0.24rem;
+	margin: 0;
+}
+.icon-shouji {
+	color: skyblue;
+	padding-right: 0.1rem;
+}
+.star>.icon-five-star {
+	color: yellow;
+	font-size: 0.1rem;
+}
+.header-middle .icon-arrow-right{
+	padding-right: 0.24rem;
+}
+.header-bottom {
+	width: 7.02rem;
+	height: 1.42rem;
+	background-color: white;
+	border-radius: 0.15rem;
+	padding: 0.24rem;
+	margin-top: 0.24rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.header-bottom-inner {
+	width: 100%;
+	height: 0.35rem;
+	display: flex;
+	justify-content: space-between;
+}
+.header-bottom-inner-main {
+	font-size: 0.24rem;
+	color: blue;
+	line-height: 0.35rem;
+	font-weight: bold;
+}
+.header-bottom-inner-main1 {
+	font-size: 0.24rem;
+	color: blue;
+	line-height: 0.35rem;
+	font-weight: bold;
+	margin-left: 0;
+}
+.header-bottom-inner-main2 {
+	font-size: 0.24rem;
+	color: blue;
+	line-height: 0.35rem;
+	font-weight: bold;
+	margin-right: 0;
+}
+.header-bottom-inner-main>span {
+	font-size: 0.18rem;
+	color: black;
+	opacity: 0.4;
+}
+.header-bottom-inner-down {
+	font-size: 0.24rem;
+	color: black;
+	opacity: 0.8;
+	line-height: 0.35rem;
+}
+.header-bottom-inner-down1 {
+	font-size: 0.24rem;
+	color: black;
+	opacity: 0.8;
+	line-height: 0.35rem;
+	margin-left: 0;
+}
+.header-bottom-inner-down2 {
+	font-size: 0.24rem;
+	color: black;
+	opacity: 0.8;
+	line-height: 0.35rem;
+	margin-right: 0;
+}
+.icon-qianbao-copy {
+	color: blue;
+}
+.icon-youhui {
+	color: red;
+}
+.icon-jinbi {
+	color: yellow;
+}
+/*主体*/
+.main {
+	width: 100%;
+	height: 8.15rem;
+	background-color: #F4F4F4;
+	padding-top: 0.24rem;
+}
+.main-container {
+	width: 7.02rem;
+	height: 2.8rem;
+	background-color: #ffffff;
+	box-shadow: 0px 2px 13px 0px 
+		rgba(207, 207, 207, 0.54);
+	border-radius: 0.15rem;
+	padding: 0.3rem 0.24rem;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-bottom: 0.24rem;
+}
+.main-container-in {
+	width: 100%;
+	height: 0.7rem;
+	/*background-color: pink;*/
+	border-bottom: 0.01rem solid #eaeaea;
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.24rem;
+	color: #000000;
+	opacity: 0.6;
+	line-height: 0.7rem;
+}
+.main-container-in:nth-child(3){
+	border-bottom: 0;
+}
+.icon-dingwei {
+	padding-right: 0.2rem;
+	color: red;
+}
+.icon-shoucang-hover {
+	padding-right: 0.2rem;
+	color: yellow;
+}
+.icon-kefu {
+	padding-right: 0.2rem;
+	color: deepskyblue;
+}
+/*底部*/
+.footer {
+	height: 0.87rem;
+	width: 7.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.include {
+	width: 0.55rem;
+	height: 0.6rem;
+}
+.footer>a>.shouye {
+	width: 0.55rem;
+	height: 0.6rem;
+}
+.include i{
+	font-size: 0.35rem;
+	color: #7f7f7f;
+	display: block;
+	padding-left: 0.1rem;
+}
+.wode i{
+	font-size: 0.35rem;
+	color: #f92b98;
+	display: block;
+	padding-left: 0.1rem;
+}
+.include p{
+	font-size: 0.14rem;
+	color: black;
+	opacity: 0.5;
+}
+.wode p{
+	font-size: 0.14rem;
+	color: #f92b98;
+}

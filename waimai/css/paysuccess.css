@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	text-decoration: none;
+}
+div {
+	margin: 0 auto;
+	box-sizing: border-box;
+}
+a {
+	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+/*头部*/
+.header {
+	width: 100%;
+	height: 2.28rem;
+	background-color: #1e52fc;
+	font-size: 0.4rem;
+	color: white;
+	text-align: center;
+	padding-top: 1.43rem;
+	font-weight: bold;
+}
+/*支付成功*/
+.paysuccess {
+	width: 100%;
+	height: 6.32rem;
+	background-image: linear-gradient(0deg,#3a8ff9 0%,#1e52fc 100%);
+	border-radius: 0 0 50% 50%;
+	padding-top: 0.29rem;
+}
+.size1 {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.36rem;
+	letter-spacing: 0px;
+	color: #ffffff;
+	opacity: 0.8;
+	text-align: center;
+}
+.size2 {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.4rem;
+	letter-spacing: 0px;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 0.26rem;
+}
+.size3 {
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.22rem;
+	color: #ffffff;
+	opacity: 0.8;
+	text-align: center;
+	margin-top: 0.3rem;
+}
+.payimg {
+	width: 2.17rem;
+	height: 2.04rem;
+	margin-top: 0.87rem;
+}
+img {
+	width: 2.17rem;
+	height: 2.04rem;
+}
+/*返回*/
+.fanhui {
+	width: 100%;
+	height: 4.74rem;
+	padding-top: 2.64rem;
+}
+.fanhui-inner {
+	width: 5.9rem;
+	height: 0.75rem;
+}
+.fanhui-inner-left {
+	width: 2.17rem;
+	height: 100%;
+	background-image: linear-gradient(0deg, 
+		#34f3fa 0%, 
+		#3095fd 100%);
+	border-radius: 0.38rem;
+	float: left;
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.4rem;
+	line-height: 0.75rem;
+	color: #ffffff;
+	text-align: center;
+}
+.fanhui-inner-right {
+	width: 2.17rem;
+	height: 100%;
+	background-image: linear-gradient(0deg, 
+		#fcad31 0%, 
+		#f7d32d 100%);
+	border-radius: 0.38rem;
+	float: right;
+	font-family: PingFang-SC-Heavy;
+	font-size: 0.4rem;
+	line-height: 0.75rem;
+	color: #ffffff;
+	text-align: center;
+}
